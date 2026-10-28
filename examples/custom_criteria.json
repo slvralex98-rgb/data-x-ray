@@ -1,0 +1,68 @@
+{
+  "schema": "data-xray-rule-set",
+  "version": 2,
+  "rules": [
+    {
+      "id": "b7ff10b6b3923355de77",
+      "kind": "date_format",
+      "columns": [
+        "event_date"
+      ],
+      "params": {
+        "format": "%d.%m.%Y"
+      }
+    },
+    {
+      "id": "4bf02543ce898d69919a",
+      "kind": "not_null",
+      "columns": [
+        "age"
+      ],
+      "params": {}
+    },
+    {
+      "id": "dc39e85437d6f9d914b6",
+      "kind": "not_null",
+      "columns": [
+        "event_date"
+      ],
+      "params": {}
+    },
+    {
+      "id": "13393c8466c5a2b6cd00",
+      "kind": "numeric_constraint",
+      "columns": [
+        "age"
+      ],
+      "params": {
+        "lower": 0,
+        "upper": 100,
+        "lower_inclusive": false,
+        "upper_inclusive": false
+      }
+    },
+    {
+      "id": "a0b569eb505b9ba00804",
+      "kind": "numeric_constraint",
+      "columns": [
+        "price"
+      ],
+      "params": {
+        "lower": 0,
+        "upper": null,
+        "lower_inclusive": false,
+        "upper_inclusive": false
+      }
+    },
+    {
+      "id": "497dd83ef9c5bda9a19b",
+      "kind": "regex",
+      "columns": [
+        "code"
+      ],
+      "params": {
+        "pattern": "[A-Z]{2}-[0-9]{3}"
+      }
+    }
+  ]
+}

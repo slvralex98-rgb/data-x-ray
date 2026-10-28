@@ -1,0 +1,25 @@
+# Keep assistant configuration out of source archives even if force-added.
+AGENTS.md export-ignore
+AGENTS.override.md export-ignore
+CLAUDE.md export-ignore
+GEMINI.md export-ignore
+SKILL.md export-ignore
+.cursorrules export-ignore
+.windsurfrules export-ignore
+.aider* export-ignore
+.agents/** export-ignore
+.codex/** export-ignore
+.claude/** export-ignore
+.cursor/** export-ignore
+.windsurf/** export-ignore
+.junie/** export-ignore
+.continue/** export-ignore
+.local-notes/** export-ignore
+.github/copilot-instructions.md export-ignore
+.github/instructions/** export-ignore
+.github/prompts/** export-ignore
+.github/agents/** export-ignore
+.github/skills/** export-ignore
+docs/* export-ignore
+docs/public -export-ignore
+docs/public/** -export-ignore

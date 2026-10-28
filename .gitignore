@@ -1,0 +1,67 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+# Local inputs, exported reports and credentials are not public source files.
+.env
+.env.*
+!.env.example
+*.log
+*.ini
+*.pem
+*.key
+*.pfx
+*.p12
+.coverage
+htmlcov/
+coverage.xml
+/data/
+/datasets/
+/exports/
+/reports/
+/local/
+# Assistant configuration and working notes stay local.
+AGENTS.md
+AGENTS.override.md
+CLAUDE.md
+GEMINI.md
+SKILL.md
+.cursorrules
+.windsurfrules
+.aider*
+.agents/
+.codex/
+.claude/
+.cursor/
+.windsurf/
+.junie/
+.continue/
+.local-notes/
+.github/copilot-instructions.md
+.github/instructions/
+.github/prompts/
+.github/agents/
+.github/skills/
+# Only curated documentation is published; working docs stay on this computer.
+/docs/*
+!/docs/public/
+# Historical local QA artifacts contain machine paths, including in screenshots.
+/docs/*.png
+/docs/*.html
+/docs/cli-validation/
+/docs/refinement-artifacts/
+/docs/tour-v010/
+# Keep curated, synthetic publication illustrations in docs/public/ instead.
+/examples/*.report.html
+/examples/*.report.json
+/examples/*.passport.json
+/examples/checked*.json
+# Default user exports can contain rules, examples and source metadata.
+/rules.json
+/criteria.json
+/table-passport.json
+/обзор-data-xray.json
+*.report.html
+*.report.json

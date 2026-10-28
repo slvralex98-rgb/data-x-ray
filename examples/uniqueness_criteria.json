@@ -1,0 +1,31 @@
+{
+  "schema": "data-xray-rule-set",
+  "version": 2,
+  "rules": [
+    {
+      "id": "bfc370878d51a9cf2181",
+      "kind": "not_null",
+      "columns": [
+        "item_code"
+      ],
+      "params": {}
+    },
+    {
+      "id": "a4f74d83c71c12d375bb",
+      "kind": "unique",
+      "columns": [
+        "batch",
+        "location"
+      ],
+      "params": {}
+    },
+    {
+      "id": "2b4b4deeff10c2c1a5af",
+      "kind": "unique",
+      "columns": [
+        "item_code"
+      ],
+      "params": {}
+    }
+  ]
+}

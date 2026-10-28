@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "data-xray"
+dynamic = ["version"]
+description = "Local, explainable profiling for a single dataset"
+requires-python = ">=3.10"
+dependencies = ["polars>=1.30,<2", "PySide6>=6.8,<7", "openpyxl>=3.1,<4"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+data-xray = "data_xray.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["data_xray*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "data_xray.__version__"}
+
+[tool.setuptools.package-data]
+data_xray = ["assets/*.svg"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

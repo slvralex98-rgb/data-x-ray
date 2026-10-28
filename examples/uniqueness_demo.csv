@@ -1,0 +1,7 @@
+item_code,location,batch
+001,north,A
+002,north,A
+001,north,B
+003,south,A
+004,south,A
+,south,B
